@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    background-color: black;
+    color: gold;
+    display: flex;
+    height: 91px;
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;
+}
