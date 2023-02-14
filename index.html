@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <title>Cheet Sheet</title>
+</head>
+    <body>
+        <nav>
+            <span class="logo"><img src="" alt=""></span>
+            <div class="heading">Cheet Sheet by Sarvesh</div>
+        </nav>
+
+        <div class="html-container">
+            <ul>
+                <li>HTML BoilerPlate
+                    <pre class="language-html"><code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &lt;title&gt;Document&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code></pre>
+                </li>
+                <li>Entities</li>
+                    <pre class="language-html">
+                        <code>
+                            &nbsp; (For Spacing)
+                            &#163; (For £)
+                        &#8203; (For Empty Character)
+                        &lt; p &gt; (For Displaying Tags)
+                        &copy; (For ©)
+                        </code>
+                    </pre>
+
+                <li>Tags</li>
+                    <pre class="language-html">
+                        <code>
+    &lt;h1&gt; h1 to h6 &lt;h6&gt; ( heading )
+    &lt;p&gt;&lt;/p&gt; ( paragraph )
+    &lt;table&gt;&lt;/table&gt; ( form a table )
+    &lt;ul&gt;&lt;/ul&gt; ( unordered list )
+    &lt;ol&gt;&lt;/ol&gt; ( ordered list )
+    &lt;iframe&gt;&lt;/iframe&gt; ( link other websites )
+    &lt;form&gt;&lt;/form&gt; ( creates a form )
+    &lt;input&gt; ( formats )
+    &lt;textarea&gt;&lt;/textarea&gt; ( Blank area )
+    &lt;label&gt;&lt;/label&gt; ( name of drop-down menu )
+    &lt;select&gt;&lt;/select&gt; ( drop-down menu )
+    &lt;option&gt;&lt;/option&gt; ( options of drop-down menu )
+    &lt;span&gt;&lt;/span&gt; ( merge in same line )
+    &lt;div&gt;&lt;/div&gt; ( divide in separate lines )
+    &lt;strong&gt;&lt;/strong&gt;, &lt;b&gt;&lt;/b&gt; ( bold )
+    &lt;em&gt;&lt;/em&gt;, &lt;i&gt;&lt;/i&gt; ( italic )
+    &lt;br&gt; ( new line )
+    &lt;hr&gt; ( horizontal rule )
+                        </code>
+                    </pre>
+                    <li>Semantic Tags</li>
+                    <pre class="language-html">
+                        <code>
+                            &lt;Header&gt;
+                            &lt;Footer&gt;
+                            &lt;nav&gt;
+                            &lt;section&gt;
+                            &lt;article&gt;
+                            &lt;details&gt;
+                            &lt;summary&gt;
+                        </code>
+                    </pre>
+                    <li>List</li>
+                    <pre class="language-html">
+                        <code>
+                            &lt;ul type=”disc”&gt; &lt;li&gt; This is a List &lt;/li&gt; &lt;/ul&gt;
+                            &lt;ol type=”A”&gt; &lt;li&gt; This is a List &lt;/li&gt; &lt;/ol&gt;
+                        </code>
+                    </pre>
+                    <li>Table</li>
+                    <pre class="language-html">
+                        <code>
+&lt;table&gt;
+    &lt;thead&gt;&lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt; &lt;th&gt;Roll&lt;/th&gt;
+    &lt;/tr&gt;&lt;/thead&gt;
+    &lt;tbody&gt;&lt;tr&gt;
+    &lt;td&gt;Sarvesh&lt;/td&gt; &lt;td&gt;04&lt;/td&gt;
+    &lt;/tr&gt;&lt;/tbody&gt;
+    &lt;tfoot&gt;&lt;tr&gt;
+    &lt;td&gt;SUBMIT&lt;/td&gt;
+    &lt;/tfoot&gt;&lt;/tr&gt;
+&lt;/table&gt;
+                        </code>
+                    </pre>
+                    <li>Form</li>
+                    <pre class="language-html">
+                        <code>
+    &lt;form action=”backend.php”&gt;
+    &lt;textarea name= “myText” col = “30” row= “10”&gt;
+    &lt;input type = “text” name= ”myName”&gt;
+    &lt;input type = “number” name= ”myRoll”&gt;
+    &lt;input type = “email” name= ”myMail”&gt;
+    &lt;input type = “checkbox” name= ”myCheckbox”&gt;
+    &lt;input type = “checkbox” name= ”myCheckbox” checked&gt;
+    &lt;input type = “radio” name= ”myGender”&gt;
+    &lt;input type = “image” name= ”img”&gt;
+    &lt;input type = “date” value= ”myDate”&gt;
+    &lt;input type = “reset” value= ”reset now”&gt;
+    * &lt;input type = “submit” value= ”submit now” required&gt;
+    &lt;label for =”sub”&gt;Subject&lt; /label&gt;
+    &lt;label for=”car”&gt;Car&lt;/label&gt;
+    &lt;select name=”myCar” id=”car”&gt;
+    &lt;option value=”ind”&gt;Indica&lt;/option&gt;
+    &lt;option value=”swi” selected&gt;Swift&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;/form&gt;
+                        </code>
+                    </pre>
+                    <li>Link Tag</li>
+                    <pre class="language-html">
+                        <code>
+&lt;a href=”sarvesh.html”&gt;Link To Internal Page&lt;/a&gt;
+&lt;a href=”file/sarvesh.html”&gt;Link To Internal Folder&lt;/a&gt;
+&lt;a href=”/https://drive.google.com”&gt;Link To External File&lt;/a&gt;
+&lt;a href=”google.com”&gt;Go To Google on same tab&lt;/a&gt;
+&lt;a href=”google.com” target = “_blank”&gt;Google on new tab&lt;/a&gt;
+
+                        </code>
+                    </pre>
+                    <li>Image Tags</li>
+                    <pre class="language-html">
+                        <code>
+                            &lt;img src=”image.jpg” alt=”error message”&gt;
+                        </code>
+                    </pre>
+                    <li>Picture</li>
+                    <pre class="language-html">
+                        <code>
+&lt;picture&gt;
+    &lt;source srcset="img_smallflower.jpg" media="(max-width: 600px)"&gt;
+    &lt;source srcset="img_flowers.jpg" media="(max-width: 1500px)"&gt;
+    &lt;source srcset="flowers.jpg"&gt;
+    &lt;img src="img_smallflower.jpg" alt="Flowers"&gt;
+&lt;/picture&gt;
+                        </code>
+                    </pre>
+                    <li>Fabicon</li>
+                    <pre class="language-html">
+                        <code>
+                            &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;
+                        </code>
+                    </pre>
+                    <li>Video Tags</li>
+                    <pre class="language-html">
+                        <code>
+&lt;video src=”video.mp4” autoplay &gt;
+&lt;video src=”video.mp4” autoplay loop&gt;
+&lt;video src=”video.mp4” autoplay muted poster=”img.jpg”&gt;
+&lt;video src=”video.mp4” controls&gt;
+                        </code>
+                    </pre>
+                    <li>Class</li>
+                    <pre class="language-html">
+                        <code>
+                            &lt;div class =”first”&gt;&lt;/div&gt; ( can add same class to different elements )
+                            &lt;div class =”first second”&gt;&lt;/div&gt; ( multiple class to same elements)
+                        </code>
+                    </pre>
+                    <li>Id</li>
+                    <pre class="language-html">
+                        <code>
+&lt;div id =”first”&gt;&lt;/div&gt;     
+&lt;div id=”second”&gt;&lt;/div&gt; ( only one id for an element )
+                        </code>
+                    </pre>
+                    <li>Layout</li>
+                    <pre class="language-html">
+                        <code>
+                            &lt;header&gt; - Defines a header for a document or a section
+                            &lt;nav&gt; - Defines a set of navigation links
+                            &lt;section&gt; - Defines a section in a document
+                            &lt;article&gt; - Defines an independent, self-contained content
+                            &lt;aside&gt; - Defines content aside from the content (like a sidebar)
+                            &lt;footer&gt; - Defines a footer for a document or a section
+                            &lt;details&gt; - Defines additional details that the user can open and close on demand
+                            &lt;summary&gt; - Defines a heading for the &lt;details&gt; element                        </code>
+                    </pre>
+                    <li>Computer Code</li>
+                    <pre class="language-html">
+                        <code>
+                            The &lt;kbd&gt; element defines keyboard input
+                            The &lt;samp&gt; element defines sample output from a computer program
+                            The &lt;code&gt; element defines a piece of computer code
+                            The &lt;var&gt; element defines a variable in programming or in a mathematical expression
+                            The &lt;pre&gt; element defines preformatted text
+                        </code>
+                    </pre>
+            </ul>
+        </div>
+
+        <div class="css-container">
+            <ul>
+                <li>CSS-SYNTAX</li>
+                <pre class="language-css">
+                    <code>
+                        Selector { property : value; } (element selector)
+                        p{border: 2px solid red;}
+                        Selector1, Selector2 { property : value; } (group selector)
+                        footer, span{background-color: pink;}
+                        Selector1 Selector2 { property : value; } (each under selector1)
+                        footer span{background-color: pink;}
+                        Selector1 > Selector2 { property : value; } (direct child of selector1)
+                        footer > span{background-color: pink;}
+                        Selector1 + Selector2 { property : value; } (immediately after selector1 )
+                        footer + span{background-color: pink;}
+                        Selector[Attribute] { property : value; } (pseudo selector)
+                        input[type='text']{background-color: pink;}
+                        Selector:keyword(position) { property : value; } ( apply in the given position)
+                        li:nth-child(2){background-color: pink;}
+                        li:nth-child(2n+0){background-color: pink;}
+                        li:nth-child(even){background-color: pink;}
+                        Selector::keyword { property : value; } ( before/after the selector)
+                        section::before{content: “this is content”;}
+                        section::after{content: “this is content”;}
+                        #Id { property : value; } (Id selector)
+                        #firstPara{color: green;}
+                        .Class { property : value; } (class selector)
+                        .secondPara{color: blue;}
+                        #Id Selector { property : value; } (selector under a Id)
+                        #firstPara p {color: green;}
+                        .class Selector { property : value; } (selector under a class)
+                        .secondPara p {color: green;}
+                        Selector1, Selector2#id { property : value; } ( group selector with id)
+                        footer, span#firstPara{color: green;}
+                        Selector1, Selector2.class { property : value; } ( group selector with class)
+                        footer, span.secondPara{color: blue;}
+                        #id:Action { property : value; } ( pseudo selector with id)
+                        #firstPara:hover{color: blue;}
+                        .class:Action { property : value; } (pseudo selector with class)
+                        .secondPara:active{color: blue;}
+                        #id Selector:Action { property : value; } (Group selector inside id)
+                        .firstPara footer:visited {color: blue;}
+                        .class Selector:Action { property : value; } (Group selector with class)
+                        .second footer:visited {color: blue;}
+                        @media media-type and (media-feature) { property : value; } (media query)
+                        @media screen and (min-width:50px){color: blue;}
+                        @keyframes animation-name { start{ property : value; }end{property : value; }} (animation)
+                        @keyframes sarvesh1{start{
+                        width: 200px;}
+                        to{ width: 500px;}}
+                        @keyframes sarvesh2{ 0%{
+                        color: violet;}
+                        25%{
+                        color: pink;}
+                        }
+                    </code>
+                </pre>
+                <li>Units</li>
+                <pre class="language-css">
+                    <code>
+                        px ( 1/96th of an inch )
+                        em ( font-size becomes x times of its parent element )
+                        rem ( font-size get set according to the size of root element )
+                        vh ( 1/100 times of the viewport height )
+                        vw ( 1/100 times of the viewport width )
+                    </code>
+                </pre>
+                <li>Text</li>
+                <pre class="language-css">
+                    <code>
+                        text-decoration-line
+                        text-decoration-color
+                        text-decoration-style
+                        text-decoration-thickness
+                        text-decoration
+                        text-align
+                    </code>
+                </pre>
+                <li>Fonts</li>
+                <pre class="language-css">
+                    <code>
+                        font-family : 'Ubuntu', 'sans-serif', 'Arial Narrow', ‘Arial’ ;
+                        font-size : 33px;
+                        line-height : 1.8em;
+                        font-weight : bold;
+                        font-style : italic;
+                        font : italic bold 33px 1.8em Arial ; ( style weight size height family )
+                    </code>
+                </pre>
+                <li>Colors</li>
+                <pre class="language-css">
+                    <code>
+                        color : pink; ( Color by name )
+                        color : rgb(223, 130, 54); ( Color by rgb value )
+                        color : #ff4532;
+                    </code>
+                </pre>
+                <li>Background</li>
+                <pre class="language-css">
+                    <code>
+                        background-color : pink;
+                        background-image : url('https//sarvesh/img/photo.png');
+                        background-repeat : no-repeat;
+                        background-position : top center; ( x-axis and y-axis )
+                        background : #000 url(‘img’) no-repeat left top ; ( color image repeat position )
+                        opacity : 0.5;
+                    </code>
+                </pre>
+                <li>Border</li>
+                <pre class="language-css">
+                    <code>
+                        border-color : pink;
+                        border-style : 11px;
+                        border-top : 2px solid rgb(231, 22, 231);
+                        border-right : 2px solid rgb(18, 10, 133);
+                        border-bottom : 2px solid rgba(9, 144, 27, 0.774);
+                        border-left : 2px solid rgb(156, 42, 13);
+                        border-radius : 11px;
+                        border-top-left-radius : 4px;
+                        border-top-right-radius : 14px;
+                        border-bottom-left-radius : 8px;
+                        border-bottom-right-radius : 24px;
+                        border : 2px solid #000 ; ( width style color )
+                    </code>
+                    </pre>
+                <li>Margin</li>
+                <pre class="language-css">
+                    <code>
+                        margin-top : 10px;
+                        margin-right : 10px;
+                        margin-left : 10px;
+                        margin-bottom : 10px;
+                        margin : auto;
+                        margin : 10px 7px ;             ( top=bottom right=left )
+                        margin : 10px 7px 3px 5px ;     ( top right bottom left )
+                    </code>
+                    </pre>
+                <li>Padding</li>
+                <pre class="language-css">
+                    <code>
+                        padding-top : 10px;
+                        padding-right : 10px;
+                        padding-left : 10px;
+                        padding-bottom : 10px;
+                        padding : 10px 7px ;             ( top=bottom right=left )
+                        padding : 10px 7px 3px 5px ;     ( top right bottom left )
+                    </code>
+                    </pre>
+                <li>Float & Clear</li>
+                <pre class="language-css">
+                    <code>
+                        float : right;      ( Element floats to right of its container )
+                        float : left;       ( Element floats to left of its container )
+                        float : none;       ( Element doesn't float, this is default)
+                        float : inherit;    ( Element inherit the float value of its parent)
+                        clear : right;      ( clear the float from right )
+                        clear : left;       ( clear the float from left)
+                        clear : both;
+                    </code>
+                    </pre>
+                <li>Overflow</li>
+                <pre class="language-css">
+                    <code>
+                        overflow : scroll; ( overflow is clipped, scroll-bar is added )
+                        overflow : hidden; ( overflow is clipped, rest of the content will be invisible)
+                        overflow : auto; ( if overflow is clipped, automatically scroll-bar is added )
+                        overflow : visible; ( overflow is not clipped, default )
+                        overflow-wrap : break-words; ( browser can break the lines with long words )
+                    </code>
+                    </pre>
+                <li>Display</li>
+                <pre class="language-css">
+                    <code>
+                        display : block; ( Takes whole width )
+                        display : inline; ( height and width property have no effect )
+                        display : inline-block; ( inline, but can set height and width )
+                        display : none; ( hide the element with no space )
+                        display : flex; ( initialize the container as a flex box)
+                        display : grid; ( initialize the container as a grid )
+                    </code>
+                    </pre>
+                <li>Position</li>
+                <pre class="language-css">
+                    <code>
+                        position : static; ( default )
+                        position : relative; ( position the element relative to its normal position )
+                        position : absolute; ( position the element relative to its first parent )
+                        position : fixed; ( position the element relative to the browser window )
+                        position : sticky; ( position the element relative to user’s scroll position )
+                        right : 10px; ( gap from right )
+                        left : 10px; ( gap from left )
+                        top : 10px; ( gap from top )
+                        bottom : 10px; ( gap from bottom )
+                        z-index : 10; ( specify the stack order of an element, will not work on static position )
+                    </code>
+                    </pre>
+                <li>Visiblity</li>
+                <pre class="language-css">
+                    <code>
+                        visibility : visible; ( default )
+                        visibility : hidden; ( hide the element, show a space )
+                    </code>
+                    </pre>
+                <li>Flex-Box</li>
+                <pre class="language-css">
+                    <code>
+                        flex-direction : row; ( default )
+                        flex-direction : column;
+                        flex-direction : row-reverse;
+                        flex-direction : column-reverse;
+                        flex-wrap : no-wrap; ( default )
+                        flex-wrap : wrap;
+                        flex-wrap : wrap-reverse;
+                        flex-flow : row wrap ; ( flex-direction flex-wrap )
+                        justify-content : center;
+                        justify-content : space-between; ( justify the content in horizontal direction )
+                        justify-content : space-evenly;
+                        justify-content : space-around;
+                        align-items : center;
+                        align-items : flex-start; ( justify the content in vertical direction )
+                        align-items : flex-end;
+                        align-items : stretch;
+                    </code>
+                    </pre>
+                <li>Flex-Items</li>
+                <pre class="language-css">
+                    <code>
+                        flex-grow : 3; ( flexible-item will grow more, relative to other flexible-items )
+                        flex-shrink : 1; ( flexible-item will sink more, relative to other flexible-items )
+                        flex-basis : 160px; ( if flex-direction set to row, flex-basis controls width, vice versa)
+                        align-self : flex-start; ( higher the order, later it shows )
+                        align-self : flex-end; ( higher the order, later it shows )
+                        align-self : center; ( higher the order, later it shows )
+                        order : 2; ( higher the order, later it shows )
+                    </code>
+                    </pre>
+                <li>Box-Shadow</li>
+                <pre class="language-css">
+                    <code>
+                        box-shadow : 10px 13px green; ( x-axis y-axis color)
+                        box-shadow : 10px 13px 2px green; ( x-axis y-axis blur-radi color)
+                        box-shadow : 10px 13px 2px 3px green; ( x y blur-radi spread-radi color)
+                        box-shadow : 10px 13px 2px 3px rgba(5, 3, 2, 0.5); (x y blur-radi spread-radi rgba)
+                        box-shadow : inset 10px 13px green; ( inside-box x-axis y-axis color)
+                        box-shadow : 10px 13px green, 15px 15px red; ( multiple shadows)
+                    </code>
+                    </pre>
+                <li>Text-Shadow</li>
+                <pre class="language-css">
+                    <code>
+                        text-shadow: 2px 2px;
+                        text-shadow: 2px 2px red;
+                        text-shadow: 2px 2px 5px red;
+                        text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+                    </code>
+                    </pre>
+                <li>Animation</li>
+                <pre class="language-css">
+                    <code>
+                        animation-name : sarvesh1;
+                        animation-duration : 8s;
+                        animation-timing-function : ease-in-out;
+                        animation-delay : 3s;
+                        animation-iteration-count : 2;
+                        animation-fill-mode : alternate;
+                        animation-direction : forward;
+                        animation : sarvesh 5s ease-in 3s 12 forward backwards ; (name duration time delay count direction)
+                    </code>
+                    </pre>
+                <li>Transition</li>
+                <pre class="language-css">
+                    <code>
+                        transition-property : background-color;
+                        transition-duration : 2s;
+                        transition-timing-function : ease-in-out;
+                        transition-delay : 3s;
+                        transisation : all 1s ease-in 2s ; ( property duration timing delay)
+                    </code>
+                    </pre>
+                <li>Transform</li>
+                <pre class="language-css">
+                    <code>
+                        transform : rotate(45deg);
+                        transform : skew(40deg);
+                        transform : scale(2);
+                        transform : translateX(150px);
+                        transform : translateY(150px);
+                        transform : transform(150px, 150px) ; ( x-axis y-axis )
+                    </code>
+                </pre>
+                <li>Grid</li>
+                <pre class="language-css">
+                    <code>
+                        grid-template-rows : 300px 100px 50px; ( row-1 row-2 row-3 )
+                        grid-template-columns : 300px 100px 50px; ( column-1 column-2 column-3 )
+                        grid-template-rows : repeat(3, auto); ( 3 rows of auto width )
+                        grid-template-columns : 1fr 4fr 1fr; ( 1 : 4 : 1 )
+                        grid-auto-rows : 2fr;; ( remaining rows are set as 2x of normal size )
+                        grid-column-gap : 7rem; ( gap between columns )
+                        grid-row-gap : 7rem; ( gap between rows )
+                        grid-gap : 7rem; ( gap between two grids )
+                        grid-column-start : 1; ( merge 1st and 2nd column )
+                        grid-column-end : 3;
+                        grid-row-start : 1; ( merge 1st and 2nd row )
+                        grid-row-end : 3;
+                        grid-column : 1 / span 3; ( merge 1st and 3rd column )
+                        grid-row : 1 / span 3 ; ( merge 1st and 3rd row )
+                        grid-template-column : repeat(auto-fit, minmax(200px, 1fr)); ( merge 1st and 3rd row )
+
+                        .container{
+                            grid-template-areas : ‘navbar navbar navbar’ ( 2 rows and 3 columns )
+                            ‘Section section section’;
+                            }
+                             #navbar {
+                            grid-area : navbar ; ( declare )
+                            }
+                             #section {
+                            grid-area : section ; ( declare )
+                            }
+                    </code>
+                </pre>
+                <li>Variable</li>
+                <pre class="language-css">
+                    <code>
+                        .box {
+                            --box-color: violet; ( only valid inside the scope)
+                            width:200px;
+                            height: 200px;
+                            background-color: var(--box-color);
+                            border: 2px solid var(--box-color);
+                            box-shadow: 3px 3px var(--box-color);
+                            margin: 2px 9px;
+                            }
+                             :root{
+                            --primary-color : blue; ( valid outside the scope also )
+                            }
+                            .box {
+                            width:200px;
+                            height: 200px;
+                            background-color: var(--primary-color) ;
+                            }
+                    </code>
+                </pre>
+            </ul>
+        </div>
+        <div class="js-container">
+            <ul>
+                <li>js outputs</li>
+                <pre class="language-js">
+                    <code>
+                       
+                            // Change text inside html tag
+                            document.getElementById("demo").innerHTML = 5 + 6; 
+                       
+
+                            // Only for Testing Purpose
+                            document.write = 5 + 6;
+                       
+
+                            // Delete all existing html tags(thialso) and print 11 only.
+                            document.write(5 + 6)
+                       
+
+                            // windows is global object, i.e, variable, properties, method already belongs to window object.
+                            //Hence, writing window object is optional.
+                            window.alert("This is an Alert Message!");
+                       
+
+                            // Save the whole contant of page in doc.
+                            window.print()
+                       
+
+                            // Print the sum 11 in the console. 
+                            console.log(5+6);
+                       
+                    </code>
+                </pre>
+                <li>Functions</li>
+                <pre class="language-js">
+                    <code>
+                        // Regular Function
+                        function name(parameter1, parameter2, parameter3) {
+                            // code to be executed
+                          }
+                          document.write(name(value1, value2, value3));
+
+
+                          // Arrow Function
+                          name = (parameter1, parameter2, parameter3) => {
+                            // code to be executed
+                          }
+
+                    </code>
+                </pre>
+                
+                <li>Objects</li>
+                <pre class="language-js">
+                    <code>
+                            const car = {type:"Fiat", model:500, color:"white"};
+                            document.write(car.type);
+                            document.write(car["color"]);
+
+
+                            const bike = { 
+                                type : "Yamaha",
+                                model : 250,
+                                color : "black",
+                                modification : function(){
+                                    document.write("Wheely");
+                                }
+                            }
+                    </code>
+                </pre>
+
+                
+                <li>this keyword</li>
+                <pre class="language-js">
+                    <code>
+                        // this keyword within an object, Refers to that object.
+                        const person = {
+                                firstName: "John",
+                                lastName : "Doe",
+                                id       : 5566,
+                                fullName : function() {
+                                    return this.firstName + " " + this.lastName;
+                                }
+                            };
+                                document.write(person.fullName);
+
+
+                                // this keyword using call, can Refer to any object as wished(person2).
+                                const person1 = {
+                                  fullName: function(city, country) {
+                                    return this.firstName + " " + this.lastName + ","+ city + "," + country;
+                                  }
+                                }
+                                const person2 = {
+                                  firstName:"John",
+                                  lastName: "Doe",
+                                }
+                                let x = person1.fullName.call(person2, "Kolkata", "India");  
+                                document.write(x)               // x returns John Doe
+
+
+                                // this keyword using apply, can Refer to any object as wished(person2).
+                                const person1 = {
+                                  fullName: function(city, country) {
+                                    return this.firstName + " " + this.lastName + ","+ city + "," + country;
+                                }
+                            }
+                            const person2 = {
+                                firstName:"John",
+                                lastName: "Doe",
+                            }
+                            let x = person1.fullName.apply(person2, ["Kolkata", "India"]);  
+                            document.write(x)               // x returns John Doe
+                            
+                            
+                            // this keyword using bind, can Refer to any object as wished(person2).
+                            const person1 = {
+                                fullName: function(city, country) {
+                                    return this.firstName + " " + this.lastName + ","+ city + "," + country;
+                                }
+                                }
+                                const person2 = {
+                                  firstName:"John",
+                                  lastName: "Doe",
+                                }
+                                let x = person1.fullName.bind(person2, "Kolkata", "India");  
+                               document.write(x());          // x returns John Doe
+                               
+                               
+                               // this refers to the HTML element that received the event in event Handelers.
+                               <button onclick="this.style.display='none'">Click to Remove Me!</button>
+                            </code>
+                        </pre>
+
+                        <li>Classes</li>
+                        <pre class="language-js">
+                            <code>
+                                // Using Class to create an object.
+                                class Car {
+                                    constructor(name, year) {
+                                      this.n = name;
+                                      this.y = year;
+                                    }
+                                  }
+                                  const myCar = new Car("Ford", 2014);
+                                  document.write(myCar.n + " " + myCar.y);
+
+
+                                  //Class Method
+                                  class Car {
+                                    constructor(name, year) {
+                                      this.n = name;
+                                      this.y = year;
+                                    }
+                                    age() {
+                                      let date = new Date();
+                                      return date.getFullYear() - this.y;
+                                    }
+                                  }
+                                  let myCar = new Car("Ford", 2014);
+                                  document.write("My " + myCar.n + " car is " + myCar.age() + " years old.");
+                                </code>
+                        </pre>
+                
+                <li>Events</li>
+                <pre class="language-js">
+                    <code>
+                        onclick="document.getElementById('demo').innerHTML = Date()"
+                        
+                        onChange="document.getElementById('demo').innerHTML = Date()"
+                        
+                        onMouseOver="document.getElementById('demo').innerHTML = Date()"
+                        
+                        onclick="document.getElementById('demo').innerHTML = Date()"
+                    </code>
+                </pre>
+
+                <li>String</li>
+                <pre class="language-js">
+                    <code>
+                        let string = "This is a string";
+                        let string = "This is 'another' string";
+                        let string = "This is \"also another\" string";
+                        let string = "It\'s also a string";
+                        document.getElementById("demo").innerHTML = "Hello " +" "+ "String";
+
+                        \b	Backspace
+                        \f	Form Feed
+                        \n	New Line
+                        \r	Carriage Return
+                        \t	Horizontal Tabulator
+                        \v	Vertical Tabulator
+                    </code>
+                </pre>
+                
+                <li>String Methods</li>
+                <pre class="language-js">
+                    <code>
+                        let string = "This is a string"
+                        console.log(var); (This is a string)
+
+                        console.log(var.length); (16)
+                        
+                        console.log(var.indexOf(‘is’)); (First occurrence of substring)
+                        
+                        console.log(var.lastIndexOf(‘is’));(Last occurrence of substring)
+                        
+                        console.log(var.slice(0,4)); (0 to 3rd index)
+                        
+                        console.log(var.substring(0,4)); (0 to 3rd index)
+                        
+                        console.log(var.substr(0,4)); (0 to 3rd index)
+                        
+                        console.log(var.replace(‘string’,‘example’));(This is a example)
+                        
+                        console.log(var.toUpperCase()); (THIS IS A STRING)
+                        
+                        console.log(var.toLowerCase()); (this is a string)
+                        
+                        console.log(var.concat(‘example’)); (This is a string example)
+                        
+                        console.log(var.trim()); (delete spaces from front & end)
+                        
+                        console.log(var.charAt(5)); (i)
+                    </code>
+                </pre>
+                
+                <li>String Templates </li>
+                <pre class="language-js">
+                    <code>
+                        let text1 = `Sarvesh`;
+
+                        let text2 = `aka "Vicky"`;
+
+                        let text =
+                        `The quick
+                        brown fox
+                        jumps over
+                        the lazy dog`;
+
+                        // Template literals allow variables in strings:
+                        let text = `Welcome ${text1}, ${text2}!`;
+
+                       // Template literals allow expressions in strings:
+                        let total = `Total: ${text1.length}`;
+
+                        // Template literals allow HTML tags in strings:
+                        let html = `<h2>${text1}</h2>`;
+
+                    </code>
+                </pre>
+                
+                <li>Array</li>
+                <pre class="language-js">
+                    <code>
+                        //Creation of Array.
+                        const cars = ["Audi", "Volvo", "BMW"];
+
+                        const bikes = [];
+                        bikes[0] = "Yamaha";
+                        bikes[1] = "Bajaj";
+                        bikes[2] = "Hero";
+                        
+                        cars.length        // Returns the number of elements
+                        cars.sort()       // Sort the array of String
+                        cars.reverse()   // Reverse the array of String 
+                        points.sort(function(a, b){return a - b});  // Short the array of Number
+                        points.sort(function(a, b){return b - a});  // Sort & Reverse the array of Number
+                        Math.max.apply(null, points); // Returns the Maximum number present in the array
+                        Math.min.apply(null, points); // Returns the Minimum number present in the array
+
+
+
+                        cars[0]                         // Returns the first array element
+                        cars.push("jagwar")            // Adding an element in the end of the array
+                        cars.pop()                    // Deleting the last element of the array
+                        cars.unshift("Swift")        // Adding an element in the begining of the array
+                        cars.shift()                // Deleting the first element of the array
+                        cars.join("_")             // Adding '_' in between the elements
+                        cars.slice(1);            // Deleting 0th index element of the array
+                        cars.slice(1, 2);        // Deleting 0th and 2nd index elements of the array
+                        cars.splice(1, 2, "jagwar);        // Adding jagwar in index-1 and deleting 2 elements from index-1
+                        cars.splice(0,1)                  // Deleting 1 element from index-0
+                        cars.concat(bikes)               // Merging two Arrays
+                        const vehicles = [...cars, ...bikes]      // Merging two Arrays
+
+                        document.write(typeof cars); // Returns an object
+                        document.write(Array.isArray(cars));       // Returns true
+                        document.write(cars.toString());          // Audi, Volvo, BMW
+                        document.write(arr.indexOf("Audi"))      // Returns the first occurrence index of same element 
+                        document.write(arr.lastIndexOf("Audi"))   // Returns the last occurrence index of same element 
+                        document.write(arr.includes("Mercedes"))   // Returns false as Mercedes dose'nt exists in the array 
+
+                    </code>
+                </pre>
+                
+                <li>if-else Conditions</li>
+                <pre class="language-js">
+                    <code>
+                        if (condition) {
+                            //  block of code to be executed if the condition is true
+                          }
+
+
+                          if (condition) {
+                            //  block of code to be executed if the condition is true
+                          } else {
+                            //  block of code to be executed if the condition is false
+                          }
+
+
+                          if (condition1) {
+                            //  block of code to be executed if condition1 is true
+                          } else if (condition2) {
+                            //  block of code to be executed if the condition1 is false and condition2 is true
+                          } else {
+                            //  block of code to be executed if the condition1 is false and condition2 is false
+                          }
+                    </code>
+                </pre>
+                
+                <li>Switch Case</li>
+                <pre class="language-js">
+                    <code>
+                        switch(expression) {
+                            case x:
+                              // code block
+                              break;
+                            case y:
+                              // code block
+                              continue;
+                            case z:
+                              // code block
+                              break;
+                            default:
+                              // code block
+                          }
+                    </code>
+                </pre>
+                
+                <li>For Loop </li>
+                <pre class="language-js">
+                    <code>
+                        for (expression 1; expression 2; expression 3) {
+                            // code block to be executed
+                          }
+
+
+                          for (key in object) {
+                            // code block to be executed
+                          }
+
+
+                          for (variable of iterable) {
+                            // code block to be executed
+                          }
+                    </code>
+                </pre>
+                
+                <li>While loop</li>
+                <pre class="language-js">
+                    <code>
+                        while (condition) {
+                            // code block to be executed
+                          }
+
+
+                          do {
+                            // code block to be executed
+                          }
+                          while (condition);
+                    </code>
+                </pre>
+                
+                <li>Sets</li>
+                <pre class="language-js">
+                    <code>
+                        // Create a Set
+                        const letters = new Set(["a","b","c"]);
+
+
+                        // Create a Set
+                        const letters = new Set();
+
+                        // Add Values to the Set
+                        letters.add("a");
+                        letters.add("b");
+                        letters.add("c");
+
+
+                        // Create Variables
+                        const a = "a";
+                        const b = "b";
+                        const c = "c";
+
+                        // Add Variables to the Set
+                        letters.add(a);
+                        letters.add(b);
+                        letters.add(c);
+
+                    </code>
+                </pre>
+                
+                <li>Maps</li>
+                <pre class="language-js">
+                    <code>
+                        // Create a Map
+                        const fruits = new Map([
+                        ["apples", 500],
+                        ["bananas", 300],
+                        ["oranges", 200]
+                        ]);
+
+
+                        // Create a Map
+                        const fruits = new Map();
+
+                        // Set Map Values
+                        fruits.set("apples", 500);
+                        fruits.set("bananas", 300);
+                        fruits.set("oranges", 200);
+
+
+                        fruits.get("apples");    // Returns 500
+                        fruits.delete("apples"); // Delete apples
+                        fruits.has("apples");    // Returns false
+                        fruits.size;            // Returns no. of elements in a Map
+
+
+                    </code>
+                </pre>
+                
+                <li>js </li>
+                <pre class="language-js">
+                    <code>
+                        
+                    </code>
+                </pre>
+                
+                <li>js </li>
+                <pre class="language-js">
+                    <code>
+                        
+                    </code>
+                </pre>
+                
+                <li>js </li>
+                <pre class="language-js">
+                    <code>
+                        
+                    </code>
+                </pre>
+                
+                <li>js </li>
+                <pre class="language-js">
+                    <code>
+                        
+                    </code>
+                </pre>
+                
+                
+            </ul>
+        </div>
+    </body>
+    </html>
